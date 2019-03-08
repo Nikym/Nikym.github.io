@@ -1,1 +1,104 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome to my Portfolio</title>
+
+        <!-- Linking relevant stylesheets -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="./css/main.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+
+        <div class="container text-offwhite screen">
+            <div class="row h-100">
+                <div class="col-md-7 align-self-center pr-0">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4 pt-2 ml-sm-0 mb-sm-2 ml-lg-0 mb-lg-auto" id="faderight">
+                            <img class="ml-4" id="pp" src="./images/IMG_0340.jpg"/>
+                        </div>
+                        <div class="col-sm-12 col-lg-6">
+                            <h1 class="display-1" id="fadedown">
+                                <span class="typewrite" data-period="2000" data-type='[ "Hi,", "Привет,"]'></span>
+                            </h1>
+                            <h3 class="display-5" id="fadeleft">I'm Nik.</h3>
+                            <p id="fadeleft">University Student and Web Developer</p>
+                        </div>
+                    </div>
+                    <div class="row" id="fadeup">
+                        <div class="col-sm-12 offset-lg-4 col-lg-8">
+                            <a class="btn btn-outline-light" href="https://gitlab.com/nik_">GitLab</a>
+                            <button class="btn btn-outline-light ml-2" onclick="aboutme()" href="#" type="button">About Me</button>
+                            <button class="btn btn-outline-light ml-2" onclick="email()" href="#" type="button">Email</button>
+                            <button class="btn btn-outline-light ml-2" onclick="projects()" href="#" type="button">Showcase</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-lg-5 align-self-center" id="aboutme">
+                    <div class="">
+                        <h4>Welcome to my Portfolio!</h4>
+                        <p class="small">
+                            Hi, I'm Nikita (or Nik).
+                            I'm a computer science student with a passion for programming
+                            and the subject as a whole, with interests in online technologies
+                            and web development.
+                            <br/><br/>
+                            I'm always looking for a challenge to help me build on and
+                            practice my skills, and enjoy working on projects from time
+                            to time. If you're interested in having me help work on your
+                            project(s), don't hesitate to contact me and I'm sure we can
+                            work something out!
+                            <br/><br/>
+                            <b>Languages:</b> English, Russian
+                            <br/>
+                            <b>Technical:</b> Python, C, Java, HTML, CSS, JS, SQL
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5 align-self-center" id="toggle">
+                    <div class="">
+                        <h4>Email</h4>
+                        <p class="small">
+                            I always aim to get back to any emails as fast as I can,
+                            when not bogged down by university or work in general.
+                            <br/><br/>
+                            me@nikmelnikov.dev
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5 align-self-center" id="projects">
+                    <div class="">
+                        <h4>Showcase</h4>
+                        <p class="small">
+                            The following is a showcase of projects and work that I have
+                            done (for clients or otherwise).
+                        </p>
+                        <div class="row w-100">
+                            <div class="col-6">
+                                <a href="#">
+                                    <img class="rounded" id="showcase" src="./images/showcase-pog.png">
+                                </a>
+                                <p class="small text-center mt-1">PoG Store Frontend</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="rounded" id="showcase" src="./images/placeholder.png">
+                            </div>
+                        </div>
+                        <p class="small">
+                            You can also find some of my public projects on my
+                            <a href="https://gitlab.com/nik_">GitLab</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Linking relevant scripts -->
+        <script src="./js/typewriter.js"></script>
+        <script src="./js/slider.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/jquery.min.js"></script>
+
+    </body>
+</html>

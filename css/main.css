@@ -1,0 +1,124 @@
+body {
+    background: #303134;
+    overflow: hidden;
+}
+
+.text-offwhite {
+    color: #e9e9e9;
+}
+
+.typewrite {
+    border-right: 0.08em solid #fff;
+}
+
+/* Images */
+#pp {
+    border-radius: 50%;
+    height: 175px;
+    border: 1px solid #e9e9e9;
+}
+
+#showcase {
+    width: 200px;
+}
+
+#showcase:hover {
+    filter: brightness(90%);
+}
+
+/* Page layout */
+.screen {
+    height: 100vh;
+}
+
+/* Animation */
+
+#toggle, #aboutme, #projects {
+    display: none;
+}
+
+#fadedown {
+    animation: slidedown 1s;
+}
+
+#fadeleft {
+    animation: fadein 1s;
+}
+
+#faderight {
+    animation: slideright 1s;
+}
+
+#fadeup {
+    animation: slideup 2s;
+}
+
+@keyframes slideup {
+    0% {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideright {
+    0% {
+        opacity: 0;
+        transform: translateX(-150%);
+    }
+    30% {
+        opacity: 0;
+        transform: translateX(-150%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        margin-left: 100%;
+        width: 300%;
+    }
+    30% {
+        opacity: 0;
+        margin-left: 100%;
+        width: 300%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+@keyframes slidedown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(5%);
+        opacity: 1;
+    }
+    65% {
+		transform: translateY(-4%);
+	}
+	80% {
+		transform: translateY(3%);
+	}
+	95% {
+		transform: translateY(-1%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
